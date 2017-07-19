@@ -1,0 +1,82 @@
+.login-content {
+  margin-bottom: 53px;
+  margin-top: 50px;
+  box-shadow: 0px 0px 45px #928E8E;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  width: 30%;
+  margin-left: 35%;
+  margin-top: 5%;
+}
+
+.logo {
+  width: 20%;
+}
+
+button {
+  width: 80%;
+  color: white;
+  background-color: #0a9a70;
+}
+
+.parkzapp-span {
+  color: rgb(240, 114, 65);
+  font-size: 28px;
+}
+
+.welcome-text {
+  font-family: 'Simonetta', cursive;
+  color: #666666;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+md-input-container {
+  width: 94%;
+  font-family: 'Simonetta', cursive;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+a {
+  cursor: pointer;
+}
+
+md-input-container input {
+  font-size: 18px;
+}
+
+.login-btn {
+  font-family: 'Simonetta', cursive;
+  background-color: #0a837f;
+  color: white !important;
+  width: 95%;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.forgot-password-link {
+  text-decoration: underline;
+  font-family: 'Simonetta', cursive;
+  font-weight: bold;
+  float: right;
+  color: #666666;
+  font-size: 13px;
+  margin-right: 40px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.copyright {
+  font-size: 11px;
+  margin-top: 10px;
+}
+
+.copyright a {
+  color: #0a837f;
+  font-weight: bold;
+}

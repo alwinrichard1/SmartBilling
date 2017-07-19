@@ -1,6 +1,30 @@
-<div class="container">
-  <h1 class="title">
-    <button md-button>Click me!</button>
+<div class="login-content-main">
+  <div class="login-content">
+    <img class="logo" src="../../../assets/logo.png" />
+    <h2 class="welcome-text">Welcome to <span class="parkzapp-span"> ParkZapp </span> Admin<br>
+      <span>Login to your Account</span>
+    </h2>
+    <form #loginForm="ngForm">
 
-  </h1>
+      <md-input-container>
+        <input required #usernameEmailRef name="username" [(ngModel)]="username" type="text" class="animated fadeInUp" mdInput placeholder="Username">
+      </md-input-container>
+
+      <md-input-container>
+        <input autofocus required #usernameEmailRef name="password" [(ngModel)]="password" type="text" class="animated fadeInUp"
+          mdInput placeholder="Password">
+      </md-input-container>
+
+      <a (click)="forgotPwdDialog()" class="forgot-password-link">Forgot your password?</a>
+
+      <button md-button>Login</button>
+
+    </form>
+    <div class="copyright">
+      <b>Copyright © 2016 by ParkZapp.<br>All Rights Reserved.</b><br>
+      <b>
+        <a href="./assets/parkzapp/TermsAndConditions.pdf" target="_blank">Terms and Conditions</a> | 
+        <a (click)="privacyPolicy()">Privacy Policy</a></b>
+    </div>
+  </div>
 </div>
