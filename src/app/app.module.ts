@@ -7,24 +7,27 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './components/home/home.component';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 
 import { ElectronService } from './providers/electron.service';
+import { materialImports } from 'app/app-material.module';
+import 'hammerjs';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    routingComponents
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    materialImports
   ],
   providers: [ElectronService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
