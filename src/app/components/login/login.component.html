@@ -11,20 +11,15 @@
       </md-input-container>
 
       <md-input-container>
-        <input autofocus required #usernameEmailRef name="password" [(ngModel)]="password" type="text" class="animated fadeInUp"
+        <input autofocus required #usernameEmailRef name="password" [(ngModel)]="password" type="password" class="animated fadeInUp"
           mdInput placeholder="Password">
       </md-input-container>
 
+      <a routerLink="/register" class="register-link">Register New account</a>
       <a (click)="forgotPwdDialog()" class="forgot-password-link">Forgot your password?</a>
 
-      <button md-button>Login</button>
+      <button md-button [disabled]="!loginForm.valid">Login</button>
 
     </form>
-    <div class="copyright">
-      <b>Copyright © 2016 by ParkZapp.<br>All Rights Reserved.</b><br>
-      <b>
-        <a href="./assets/parkzapp/TermsAndConditions.pdf" target="_blank">Terms and Conditions</a> | 
-        <a (click)="privacyPolicy()">Privacy Policy</a></b>
-    </div>
   </div>
 </div>

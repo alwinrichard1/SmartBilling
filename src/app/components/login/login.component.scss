@@ -18,7 +18,9 @@
 
 button {
   width: 80%;
-  color: white;
+  color: white !important;
+  font-family: 'PT Serif', serif;
+  font-size: 20px;
   background-color: #0a9a70;
 }
 
@@ -28,7 +30,8 @@ button {
 }
 
 .welcome-text {
-  font-family: 'Simonetta', cursive;
+  font-family: 'PT Serif', serif;
+  font-size: 20px;
   color: #666666;
   font-size: 16px;
   font-weight: bold;
@@ -37,9 +40,8 @@ button {
 
 md-input-container {
   width: 94%;
-  font-family: 'Simonetta', cursive;
-  font-weight: bold;
-  font-size: 16px;
+  font-family: 'PT Serif', serif;
+  font-size: 20px;
 }
 
 a {
@@ -50,20 +52,20 @@ md-input-container input {
   font-size: 18px;
 }
 
-.login-btn {
-  font-family: 'Simonetta', cursive;
-  background-color: #0a837f;
-  color: white !important;
-  width: 95%;
-  font-size: 16px;
-  font-weight: bold;
-}
-
 .forgot-password-link {
   text-decoration: underline;
-  font-family: 'Simonetta', cursive;
-  font-weight: bold;
+  font-family: 'PT Serif', serif;
   float: right;
+  color: #666666;
+  font-size: 13px;
+  margin-right: 40px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.register-link {
+  text-decoration: underline;
+  font-family: 'PT Serif', serif;
   color: #666666;
   font-size: 13px;
   margin-right: 40px;

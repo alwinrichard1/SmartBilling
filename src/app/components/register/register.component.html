@@ -1,0 +1,88 @@
+<div class="main-content">
+  <a routerLink="/login" md-raised-button class="back-to-login">
+    <i class="material-icons">keyboard_backspace</i>
+    Back to Login page
+  </a>
+  <md-card>
+    <wizard>
+      <wizard-step title="Personal Details">
+        <md-card>
+          <h3 class="heading">Enter your personal details !</h3>
+          <md-input-container>
+            <input mdInput placeholder="First Name">
+          </md-input-container>
+          <md-input-container>
+            <input mdInput placeholder="Last Name">
+          </md-input-container>
+          <md-input-container>
+            <input mdInput placeholder="Email ID">
+          </md-input-container>
+          <md-input-container>
+            <input mdInput placeholder="Mobile Number">
+          </md-input-container>
+        </md-card>
+        <div class="wizard-btn">
+          <button md-raised-button type="button" nextStep>
+            Next
+            <i class="material-icons">keyboard_arrow_right</i>
+            </button>
+        </div>
+      </wizard-step>
+      <wizard-step title="Shop Details" optionalStep>
+        <md-card>
+          <h3 class="heading">Enter shop details !</h3>
+          <md-input-container>
+            <input mdInput placeholder="Shop Name">
+          </md-input-container>
+          <md-input-container>
+            <input mdInput placeholder="Address">
+          </md-input-container>
+          <md-input-container>
+            <input mdInput placeholder="City">
+          </md-input-container>
+          <md-input-container>
+            <input mdInput placeholder="State">
+          </md-input-container>
+          <md-input-container>
+            <input mdInput placeholder="Zipcode">
+          </md-input-container>
+        </md-card>
+
+        <div class="wizard-btn">
+          <button md-raised-button type="button" previousStep>
+            <i class="material-icons">keyboard_arrow_left</i>
+            Previous
+            </button>
+          <button md-raised-button type="button" nextStep>
+            Next
+            <i class="material-icons">keyboard_arrow_right</i>
+          </button>
+        </div>
+      </wizard-step>
+      <wizard-step title="Login Details">
+        <md-card>
+          <h3 class="heading">Enter login details !</h3>
+          <md-input-container>
+            <input mdInput placeholder="Username">
+          </md-input-container>
+          <md-input-container>
+            <input mdInput placeholder="Password">
+          </md-input-container>
+          <md-input-container>
+            <input mdInput placeholder="Confirm Password">
+          </md-input-container>
+        </md-card>
+        <div class="wizard-btn">
+          <button md-raised-button type="button" previousStep>
+            <i class="material-icons">keyboard_arrow_left</i>
+            Previous
+            </button>
+          <button md-raised-button type="button">
+            Register
+            <i class="material-icons">done</i>
+          </button>
+        </div>
+      </wizard-step>
+    </wizard>
+  </md-card>
+</div>
